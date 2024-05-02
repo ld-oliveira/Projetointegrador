@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Controle de Gastos Cozinha da Cricca</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Adicionar Alimento</h2>
+        <form id="adicionarAlimentoForm">
+            <div class="input-group">
+                <label for="alimento">Alimento:</label>
+                <input type="text" id="alimento" name="alimento" required>
+            </div>
+            <div class="input-group">
+                <label for="valorCompra">Valor de Compra (R$):</label>
+                <input type="number" id="valorCompra" name="valorCompra" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" required>
+                <select id="unidade" name="unidade">
+                    <option value="quilos">Kilos</option>
+                    <option value="gramas">Gramas</option>
+                    <option value="litros">Litros</option>
+                    <option value="unidades">Unidades</option>
+                </select>
+            </div>
+            
+            <button type="submit">Adicionar Alimento</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Criar Receita</h2>
+        <form id="criarReceitaForm">
+            <label for="alimentoReceita">Alimento:</label>
+            <input type="text" id="alimentoReceita" name="alimentoReceita" required>
+            
+            <div class="input-group">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" required>
+                <select id="unidade" name="unidade">
+                    <option value="quilos">Kilos</option>
+                    <option value="gramas">Gramas</option>
+                    <option value="litros">Litros</option>
+                    <option value="unidades">Unidades</option>
+                </select>
+            </div>
+            
+            <button type="submit">Adicionar Alimento à Receita</button>
+        </form>
+        
+        <div id="somaReceita">
+            <h3>Total Gasto na Receita:</h3>
+            <p id="totalGasto">0.00</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="https://www.instagram.com/cozinhadacricca" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Botão 1"></a>
+    <a href="https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F%2B5511982156087&e=AT0byTSRoW7s05IBzrbUFAVNauakUycyFxmrOhXUaPntpK_Uzkhf-Pwn-cQqb00cyrTO7u2zXwcFvgG5X1Qn4bUHuMoCJm_WSyzaIdUG8dXpTNIjLGkVsQ" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="Botão 2"></a>
+    <a href="https://imgur.com/a/vSYRmMq" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/809/809564.png" alt="Botão 3"></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
